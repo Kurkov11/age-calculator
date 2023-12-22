@@ -7,6 +7,9 @@ document.getElementById('btn').onclick = function(){
     let calculatedDay;
     let calculatedMonth;
     let calculatedYear;
+    let currentYear = 2023;
+    let currentMonth = 12;
+    let currentDay = 22;
 
     if(dayValue == ""){
         errorOcurred = true;
