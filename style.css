@@ -26,8 +26,12 @@ body{
     background-color: hsl(0, 0%, 94%);
     font-family: 'poppins-regular';
 }
+#wrapper{
+    padding: 5rem 1rem;
+}
 #card{
     background-color: white;
+    padding: 2rem 1rem;
 }
 #date{
     display: flex;
