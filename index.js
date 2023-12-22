@@ -8,7 +8,7 @@ document.getElementById('btn').onclick = function(){
     if(document.getElementById('month-input').value == ""){
         document.getElementById('month-input').style.border = '1px solid red';
         document.getElementById('month-text').style.color = 'red';
-        document.getElementById('empty-msg-text').style.display = 'block';
+        document.getElementById('empty-msg-month').style.display = 'block';
     }
     if(document.getElementById('year-input').value == ""){
         document.getElementById('year-input').style.border = '1px solid red';
