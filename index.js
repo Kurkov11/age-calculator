@@ -32,5 +32,7 @@ document.getElementById('btn').onclick = function(){
         document.getElementById('empty-msg-year').style.display = 'none';
     }
 
-    
+    if(dayValue < 0 && dayValue > 31){
+        document.getElementById('year-text').style.display = 'none';
+    }
 }

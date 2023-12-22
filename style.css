@@ -66,6 +66,13 @@ body{
     font-size: 11px;
     display: none;
 }
+.invalid-msg{
+    margin-top: 0.3rem;
+    color: red;
+    font-family: 'poppins-italic';
+    font-size: 11px;
+    display: none;
+}
 #l-btn{
     height: 65px;
     width: 100%;
