@@ -38,6 +38,13 @@ body{
     justify-content: space-between;
     gap: 1rem;
 }
+.date-text{
+    text-transform: uppercase;
+    font-family: 'poppins-bold';
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: hsl(0, 1%, 44%);
+}
 #date input{
     border: 1px solid hsl(0, 0%, 86%);
     max-width: 6rem;
