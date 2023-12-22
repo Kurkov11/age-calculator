@@ -60,6 +60,7 @@ body{
     cursor: pointer;
 }
 #empty-msg{
+    margin-top: 0.3rem;
     color: red;
     font-family: 'poppins-italic';
     font-size: 11px;
