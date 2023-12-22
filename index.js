@@ -4,6 +4,9 @@ document.getElementById('btn').onclick = function(){
     let monthValue = document.getElementById('month-input').value;
     let yearValue = document.getElementById('year-input').value;
     let errorOcurred = false;
+    let calculatedDay;
+    let calculatedMonth;
+    let calculatedYear;
 
     if(dayValue == ""){
         errorOcurred = true;
