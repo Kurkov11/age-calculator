@@ -31,6 +31,7 @@ body{
 }
 #date{
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
 }
 #date input{
