@@ -4,3 +4,6 @@ body{
 #card{
     background-color: white;
 }
+#date{
+    display: flex;
+}
