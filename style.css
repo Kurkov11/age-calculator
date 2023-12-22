@@ -1,5 +1,30 @@
+@font-face {
+    font-family: 'poppins-regular';
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'poppins-italic';
+    src: url(assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppins-bold-italic';
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'poppins-extra-bold';
+    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'poppins-extra-bold-italic';
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
 body{
     background-color: hsl(0, 0%, 94%);
+    font-family: 'poppins-regular';
 }
 #card{
     background-color: white;
