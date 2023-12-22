@@ -55,6 +55,10 @@ body{
     font-family: 'poppins-bold';
     font-size: 20px;
 }
+#date input:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
 #l-btn{
     height: 65px;
     width: 100%;
