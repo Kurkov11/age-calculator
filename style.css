@@ -64,6 +64,7 @@ body{
     color: red;
     font-family: 'poppins-italic';
     font-size: 11px;
+    display: none;
 }
 #l-btn{
     height: 65px;
