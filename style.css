@@ -7,3 +7,6 @@ body{
 #date{
     display: flex;
 }
+#date input{
+    border: 1px solid hsl(0, 0%, 86%);
+}
