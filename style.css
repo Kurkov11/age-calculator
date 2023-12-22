@@ -59,6 +59,11 @@ body{
     border: 1px solid black;
     cursor: pointer;
 }
+#empty-msg{
+    color: red;
+    font-family: 'poppins-italic';
+    font-size: 11px;
+}
 #l-btn{
     height: 65px;
     width: 100%;
