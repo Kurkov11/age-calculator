@@ -36,6 +36,8 @@ body{
 #date{
     display: flex;
     margin-bottom: 2rem;
+    justify-content: center;
+    gap: 0.8rem;
 }
 .date-text{
     text-transform: uppercase;
