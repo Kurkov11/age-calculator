@@ -50,4 +50,6 @@ body{
     max-width: 6rem;
     padding: 1rem;
     border-radius: 0.5rem;
+    font-family: 'poppins-bold';
+    font-size: 20px;
 }
