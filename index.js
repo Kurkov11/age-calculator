@@ -68,6 +68,8 @@ document.getElementById('btn').onclick = function(){
         // Month
         if(currentMonth < monthValue){
             calculatedMonth = currentMonth;
+        }else if(currentMonth == monthValue && currentDay < dayValue){
+            calculatedMonth = currentMonth;
         }else{
             calculatedMonth = currentMonth - monthValue;
         }
@@ -79,6 +81,9 @@ document.getElementById('btn').onclick = function(){
         }else{
             calculatedDay = currentDay;
         }
+        document.getElementById('age-year-score').innerHTML = calculatedYear;
+        document.getElementById('age-month-score').innerHTML = calculatedMonth;
+        document.getElementById('age-day-score').innerHTML = calculatedDay;
     }
     
     function showRed(){
