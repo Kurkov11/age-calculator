@@ -5,14 +5,13 @@ document.getElementById('btn').onclick = function(){
     let yearValue = document.getElementById('year-input').value;
     let errorOcurred = false;
 
-    let calculatedDay;
-    let calculatedMonth;
-    let calculatedYear;
-    let age;
-
     let currentYear = 2023;
     let currentMonth = 12;
     let currentDay = 22;
+
+    let calculatedDay;
+    let calculatedMonth;
+    let calculatedYear;
 
     if(dayValue == ""){
         errorOcurred = true;
@@ -58,29 +57,6 @@ document.getElementById('btn').onclick = function(){
     }
     if(!errorOcurred){
         showDefault();
-        // year
-        calculatedYear = currentYear - yearValue;
-        if(currentMonth < monthValue){
-            calculatedYear = calculatedYear - 1;
-        }else if(monthValue == currentMonth && currentDay < dayValue){
-            calculatedYear = calculatedYear - 1;
-        }
-        // Month
-        if(currentMonth < monthValue){
-            calculatedMonth = currentMonth;
-        }else if(currentMonth == monthValue && currentDay < dayValue){
-            calculatedMonth = currentMonth;
-        }else{
-            calculatedMonth = currentMonth - monthValue;
-        }
-        // Day
-        if(currentMonth != monthValue){
-            calculatedDay = currentDay;
-        }else if(currentDay >= dayValue){
-            calculatedDay = currentDay - dayValue;
-        }else{
-            calculatedDay = currentDay;
-        }
         document.getElementById('age-year-score').innerHTML = calculatedYear;
         document.getElementById('age-month-score').innerHTML = calculatedMonth;
         document.getElementById('age-day-score').innerHTML = calculatedDay;
