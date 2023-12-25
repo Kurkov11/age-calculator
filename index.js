@@ -67,9 +67,14 @@ document.getElementById('btn').onclick = function(){
     }
     if(!errorOcurred){
         showDefault();
+        findAge(currentDay, currentMonth, currentYear, birthDay, birthMonth, birthYear);  
+        document.getElementById('age-year-score').innerHTML = calculatedYear;
+        document.getElementById('age-month-score').innerHTML = calculatedMonth;
+        document.getElementById('age-day-score').innerHTML = calculatedDay;
+
         //SOURCE: geeksforgeeks.org - start
         function findAge(current_date, current_month, current_year, birth_date,  
-            birth_month, birth_year)  
+            birth_month, birth_year)
 {  
    // days of every month  
    month = [31, 28, 31, 30, 31, 30, 31,  
@@ -101,12 +106,6 @@ document.getElementById('btn').onclick = function(){
    calculatedMonth = calculated_month;
    calculatedYear = calculated_year;
 }  
-
-findAge(currentDay, currentMonth, currentYear,  
-           birthDay, birthMonth, birthYear);  
-        document.getElementById('age-year-score').innerHTML = calculatedYear;
-        document.getElementById('age-month-score').innerHTML = calculatedMonth;
-        document.getElementById('age-day-score').innerHTML = calculatedDay;
     }
     //SOURCE: geeksforgeeks.org - end
     function showRed(){
