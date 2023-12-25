@@ -7,7 +7,7 @@ document.getElementById('btn').onclick = function(){
 
     let currentYear = 2023;
     let currentMonth = 12;
-    let currentDay = 22;
+    let currentDay = 25;
 
     let daysCount;
     let calculatedDay;
@@ -58,11 +58,42 @@ document.getElementById('btn').onclick = function(){
     }
     if(!errorOcurred){
         showDefault();
-        //year calculation
-        calculatedYear = currentYear - birthYear;
-        if(currentMonth < birthMonth || (currentMonth == birthMonth && currentDay < birthDay)){
-            calculatedYear -= 1;
-        }
+        function findAge(current_date, current_month, current_year, birth_date,  
+            birth_month, birth_year)  
+{  
+   // days of every month  
+   month = [31, 28, 31, 30, 31, 30, 31,  
+                       31, 30, 31, 30, 31 ] 
+ 
+   // if birth date is greater than current date  
+   // then do not count this month and add 30  
+   // to the date so as to subtract the date and  
+   // get the remaining days  
+   if (birth_date > current_date) {  
+       current_date = current_date + month[birth_month - 1];  
+       current_month = current_month - 1;  
+   }  
+ 
+   // if birth month exceeds current month, then do  
+   // not count this year and add 12 to the month so  
+   // that we can subtract and find out the difference  
+   if (birth_month > current_month) {  
+       current_year = current_year - 1;  
+       current_month = current_month + 12;  
+   }  
+ 
+   // calculate date, month, year  
+   var calculated_date = current_date - birth_date;  
+   var calculated_month = current_month - birth_month;  
+   var calculated_year = current_year - birth_year;  
+ 
+   calculatedDay = calculated_date;
+   calculatedMonth = calculated_month;
+   calculatedYear = calculated_year;
+}  
+
+findAge(currentDay, currentMonth, currentYear,  
+           birthDay, birthMonth, birthYear);  
         document.getElementById('age-year-score').innerHTML = calculatedYear;
         document.getElementById('age-month-score').innerHTML = calculatedMonth;
         document.getElementById('age-day-score').innerHTML = calculatedDay;
