@@ -9,6 +9,7 @@ document.getElementById('btn').onclick = function(){
     let currentMonth = 12;
     let currentDay = 22;
 
+    let daysCount;
     let calculatedDay;
     let calculatedMonth;
     let calculatedYear;
