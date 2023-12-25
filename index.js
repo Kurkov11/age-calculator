@@ -58,6 +58,7 @@ document.getElementById('btn').onclick = function(){
     }
     if(!errorOcurred){
         showDefault();
+        //SOURCE: geeksforgeeks.org - start
         function findAge(current_date, current_month, current_year, birth_date,  
             birth_month, birth_year)  
 {  
@@ -98,7 +99,7 @@ findAge(currentDay, currentMonth, currentYear,
         document.getElementById('age-month-score').innerHTML = calculatedMonth;
         document.getElementById('age-day-score').innerHTML = calculatedDay;
     }
-    
+    //SOURCE: geeksforgeeks.org - end
     function showRed(){
         document.getElementById('day-input').style.border = '1px solid red';
         document.getElementById('day-text').style.color = 'red';
