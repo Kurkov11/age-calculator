@@ -109,12 +109,15 @@ body{
 
 @media only screen and (width >= 600px){
     #wrapper{
+        height: 100vh;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     #card{
         width: 570px;
         padding: 2rem;
+        height: fit-content;
     }
     #date{
         justify-content: flex-start;
