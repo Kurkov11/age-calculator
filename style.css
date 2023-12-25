@@ -106,3 +106,26 @@ body{
 #age span{
     color: hsl(259, 100%, 65%);
 }
+
+@media only screen and (width >= 600px){
+    #wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    #card{
+        width: 570px;
+        padding: 2rem;
+    }
+    #date{
+        justify-content: flex-start;
+    }
+    #l-btn{
+        align-items: flex-end;
+    }
+    #date input{
+        max-width: 8rem;
+    }
+    #age{
+        font-size: 60px;
+    }
+}
