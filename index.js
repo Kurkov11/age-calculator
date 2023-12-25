@@ -58,6 +58,11 @@ document.getElementById('btn').onclick = function(){
     }
     if(!errorOcurred){
         showDefault();
+        //year calculation
+        calculatedYear = currentYear - birthYear;
+        if(currentMonth < birthMonth || (currentMonth == birthMonth && currentDay < birthDay)){
+            calculatedYear -= 1;
+        }
         document.getElementById('age-year-score').innerHTML = calculatedYear;
         document.getElementById('age-month-score').innerHTML = calculatedMonth;
         document.getElementById('age-day-score').innerHTML = calculatedDay;
