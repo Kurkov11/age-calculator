@@ -122,6 +122,9 @@ body{
     #l-btn{
         align-items: flex-end;
     }
+    #btn{
+        padding: 1rem;
+    }
     #date input{
         max-width: 8rem;
     }
