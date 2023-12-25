@@ -1,8 +1,8 @@
 
 document.getElementById('btn').onclick = function(){
-    let dayValue = document.getElementById('day-input').value;
-    let monthValue = document.getElementById('month-input').value;
-    let yearValue = document.getElementById('year-input').value;
+    let birthDay = document.getElementById('day-input').value;
+    let birthMonth = document.getElementById('month-input').value;
+    let birthYear = document.getElementById('year-input').value;
     let errorOcurred = false;
 
     let currentYear = 2023;
@@ -14,12 +14,12 @@ document.getElementById('btn').onclick = function(){
     let calculatedMonth;
     let calculatedYear;
 
-    if(dayValue == ""){
+    if(birthDay == ""){
         errorOcurred = true;
         showRed();
         document.getElementById('empty-msg-day').style.display = 'block';
         document.getElementById('invalid-msg-day').style.display = 'none';
-    }else if(! (dayValue > 0 && dayValue <= 31)){
+    }else if(! (birthDay > 0 && birthDay <= 31)){
         errorOcurred = true;
         showRed();
         document.getElementById('invalid-msg-day').style.display = 'block';
@@ -28,12 +28,12 @@ document.getElementById('btn').onclick = function(){
         document.getElementById('empty-msg-day').style.display = 'none';
         document.getElementById('invalid-msg-day').style.display = 'none';
     }
-    if(monthValue == ""){
+    if(birthMonth == ""){
         errorOcurred = true;
         showRed();
         document.getElementById('empty-msg-month').style.display = 'block';
         document.getElementById('invalid-msg-month').style.display = 'none';
-    }else if(! (monthValue > 0 && monthValue < 13)){
+    }else if(! (birthMonth > 0 && birthMonth < 13)){
         errorOcurred = true;
         showRed();
         document.getElementById('empty-msg-month').style.display = 'none';
@@ -42,12 +42,12 @@ document.getElementById('btn').onclick = function(){
         document.getElementById('empty-msg-month').style.display = 'none';
         document.getElementById('invalid-msg-month').style.display = 'none';
     }
-    if(yearValue == ""){
+    if(birthYear == ""){
         errorOcurred = true;
         showRed();
         document.getElementById('empty-msg-year').style.display = 'block';
         document.getElementById('invalid-msg-year').style.display = 'none';
-    }else if(yearValue > 2023){
+    }else if(birthYear > 2023){
         errorOcurred = true;
         showRed();
         document.getElementById('invalid-msg-year').style.display = 'block';
