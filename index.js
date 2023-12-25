@@ -24,6 +24,16 @@ document.getElementById('btn').onclick = function(){
         showRed();
         document.getElementById('invalid-msg-day').style.display = 'block';
         document.getElementById('empty-msg-day').style.display = 'none';
+    }else if((birthMonth == 4 || birthMonth == 6 || birthMonth == 9 || birthMonth == 11) && birthDay > 30){
+        errorOcurred = true;
+        showRed();
+        document.getElementById('invalid-msg-day').style.display = 'block';
+        document.getElementById('empty-msg-day').style.display = 'none';
+    }else if(birthMonth == 2 && birthDay > 28){
+        errorOcurred = true;
+        showRed();
+        document.getElementById('invalid-msg-day').style.display = 'block';
+        document.getElementById('empty-msg-day').style.display = 'none';
     }else{
         document.getElementById('empty-msg-day').style.display = 'none';
         document.getElementById('invalid-msg-day').style.display = 'none';
